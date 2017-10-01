@@ -5,10 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.stream.Stream;
 
-/**
- * @author Eric Smith
- * @since 9/30/17
- */
 public class RGameApp {
   public static void main(String[] args) throws IOException {
     RGame rGame = new RGame();
