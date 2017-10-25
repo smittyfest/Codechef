@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Tests the correctness of the solution for the "Subsequence Equality"
  * Codechef puzzle:
- *
+ * <p>
  * https://www.codechef.com/problems/LIKECS01
  */
 public class LikeCS01Test {

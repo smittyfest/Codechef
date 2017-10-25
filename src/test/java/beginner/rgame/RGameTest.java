@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Tests the correctness of the solution for the "Rupsa and the Game"
  * Codechef puzzle:
- *
+ * <p>
  * https://www.codechef.com/problems/RGAME
  */
 public class RGameTest {

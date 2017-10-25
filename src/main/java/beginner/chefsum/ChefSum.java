@@ -41,7 +41,7 @@ public class ChefSum {
    * Passes Subtask #1 : (20 points) 1 ≤ N ≤ 100
    * Passes Subtask #2 : (80 points) 1 ≤ T ≤ 10, 1 ≤ N, A[i] ≤ 10^5
    */
-  public static int findMinimumIndexFast(int[] nums) {
+  public int findMinimumIndexFast(int[] nums) {
     long minimum = Long.MAX_VALUE;
     int index = -2;
     for (int i = 1; i <= nums.length; i++) {
