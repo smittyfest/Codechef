@@ -13,11 +13,13 @@ public class Chrl4 {
   public long findWayHome(int[] streets, int k) {
     long minProduct = 1;
     int min = Integer.MAX_VALUE;
-    for (int i = 0; i < streets.length - 1; i++) {
+    int i = streets.length - 1;
+    int home = streets[i];
+    while (i > 0) {
       int minIndex = 0;
-      for (int j = i + 1; j < streets.length; j++) {
-        int value = streets[j] - streets[i];
-        if (value <= k && value < min) {
+      for (int j = i - 1; j >= 0; j--) {
+        int value = streets[i] - streets[j];
+        if (value <= k) {
           min = streets[j];
           minIndex = j;
         }
@@ -25,6 +27,7 @@ public class Chrl4 {
       minProduct = (minProduct * min) % MODULUS;
       i = minIndex;
     }
+    minProduct = (minProduct * home) % MODULUS;
     return minProduct;
   }
 }

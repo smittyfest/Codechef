@@ -54,10 +54,10 @@ public class Chrl4App {
   public static void main(String[] args) throws IOException {
     Chrl4 chrl4 = new Chrl4();
     BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-    int[] params = Stream.of(in.readLine()).mapToInt(Integer::parseInt).toArray();
+    int[] params = Stream.of(in.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
     int numberOfStreets = params[0];
     int k = params[1];
-    int[] streets = Stream.of(in.readLine()).mapToInt(Integer::parseInt).toArray();
+    int[] streets = Stream.of(in.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
     System.out.println(chrl4.findWayHome(streets, k));
   }
 }
