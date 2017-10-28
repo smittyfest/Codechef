@@ -58,6 +58,10 @@ public class Chrl4App {
     int numberOfStreets = params[0];
     int k = params[1];
     int[] streets = Stream.of(in.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-    System.out.println(chrl4.findWayHome(streets, k));
+    if (numberOfStreets <= 80) {
+      System.out.println(chrl4.subtask1(streets, k));
+    } else {
+      System.out.println(chrl4.subtask2(streets, k));
+    }
   }
 }

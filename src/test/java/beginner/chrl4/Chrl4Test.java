@@ -27,4 +27,18 @@ public class Chrl4Test {
     assertThat(chrl4.findWayHome(streets, k)).isEqualTo(8);
   }
 
+  @Test
+  public void subtask1() {
+    int k = 2;
+    int[] streets = {1, 2, 3, 4};
+    assertThat(chrl4.subtask1(streets, k)).isEqualTo(8);
+  }
+
+  @Test
+  public void subtask2() {
+    int k = 2;
+    int[] streets = {1, 2, 3, 4};
+    assertThat(chrl4.subtask2(streets, k)).isEqualTo(8);
+  }
+
 }
